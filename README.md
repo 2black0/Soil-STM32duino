@@ -20,6 +20,7 @@
 ## Note for file
 ### sleep_thingspeak.ino
 ```
+> Sim800 http request function, connection using Serial1
 > Apply sleep function in every routine based on internal RTC of STM32
 note : sleep wont be running if USB attached
 > Send Multiple data (6 variables) with random value to thingspeak server
@@ -30,4 +31,8 @@ note : sleep wont be running if USB attached
 > Read Sensor DS18B20 : pin PB12
 > Read Battery Voltage : pin PA0 (note : battery max voltage is 4.2v)
 > Read Soil Mois Sensor : pin PA1
+```
+### full_code.ino
+```
+> Full Arduino code of this project
 ```
