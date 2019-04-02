@@ -21,6 +21,7 @@
 ### sleep_thingspeak.ino
 ```
 > Apply sleep function in every routine based on internal RTC of STM32
+note : sleep wont be running if USB attached
 > Send Multiple data (6 variables) with random value to thingspeak server
 ```
 ### read_sensor.ino
