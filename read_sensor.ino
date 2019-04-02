@@ -12,7 +12,7 @@
 // dht22 configuration
 SimpleDHT22 dht22(DHT_PIN);
 
-// ds18b20
+// ds18b20 configuration
 OneWire  ds(ONE_WIRE_BUS);
 DallasTemperature sensors(&ds);
 
@@ -59,14 +59,14 @@ void loop() {
     delay(10); 
   }
   soil_mois = soil_mois / 10;
-  soil_mois = map(soil_mois,388,220,0,100);
+  soil_mois = map(soil_mois,388,208,0,100);
   if(soil_mois>=100){soil_mois=100;}
   if(soil_mois<=0){soil_mois=0;}
   
   Serial.print("Soil Mois = ");Serial.print(soil_mois); Serial.println(" %");
   
   // Read Battery
-  Serial.print("Battery Volt = ");Serial.print(battery.voltage());Serial.println(" V");
+  Serial.print("Battery Volt = ");Serial.print((float)battery.voltage()/1000);Serial.println(" V");
   Serial.print("Battery Level = ");Serial.print(battery.level());Serial.println(" %");
 
   // Delay
