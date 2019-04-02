@@ -15,7 +15,7 @@
 ```
 > All sensor can monitored in Thingspeak and Website
 > Next : will add telegram bot notification if Pump Running
-> Pump will run in a routine or A not good condition (temperature too HIGH or humidity too low)
+> Next : Pump will run in a routine or A not good condition (temperature too HIGH or humidity too low)
 ```
 ## Note for file
 ### sleep_thingspeak.ino
